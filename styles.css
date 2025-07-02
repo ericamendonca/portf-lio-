@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0; /*mexe no conteudo interno*/
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(72, 137, 191);
+    color: antiquewhite;
+}
+
+.navegacao {
+    position: fixed; /*fixar por mais q a tela mexa*/
+    background: rgba(66, 90, 186, 0.8);
+    width: 100% ;
+    z-index: 100; /*define quem fica na frente*/
+    padding: 1.5rem; /*tamanho do menu*/
+}
+
+.menu{
+    display: flex; /*deicar as listas um do lado do outro*/
+    justify-content: center;
+    list-style: none; /*tirar as bolinhas da lista*/
+    gap: 3rem; /*deixar um espaço entre as listas*/
+}
+
+.inicao {
+text-decoration: none; /*as linhas debaixo da lista*/
+color: rgb(232, 236, 235);
+font-weight: 500;
+padding: 0.5rem 0;
+position: relative;
+transition: color 0.3s ease;
+}
+
+
+
+.inicao:hover{
+   color: rgb(47, 5, 96);
+}
+
+.cabeçalho{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.foto{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 8px solid rgb(27, 64, 95);
+
+}
+
+h1{
+    font-size: 2.5rem;
+    color: rgb(207, 207, 227);
+    font-weight: bold;
+    margin: 20px;
+}
+
+.paragrafo{
+    font-size: 1.5rem;
+    color: rgb(43, 43, 91);
+
+}
+
+.sobre{
+    padding: 6rem 2rem;
+
+}
+
+.sobre-titulo{
+    font-size: 3.5rem;
+    color: rgb(207, 207, 227);
+    text-align: center;
+
+}
+
+.sobre-texto{
+padding: 2rem;
+max-width: 600px;
+margin:0 auto; /*para centralizar*/
+border-radius: 16px;
+background-color: rgba(81, 70, 169, 0.2);
+border: 2px solid rgb(27, 64, 95);
+backdrop-filter: blur(10px);
+}
+
+.sobre-paragrafo{
+text-align: center;
+font-size: 1.5rem;
+}
+
+.projetos{
+  padding: 6rem 2rem;
+    
+}
+
+.projetos-titulo{
+   
+}
+
+.projetos-div{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+gap: 2rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.projeto-card{
+background-color: rgba(81, 70, 169, 0.2);
+border-radius: 16px;
+backdrop-filter: blur(5px);
+border: 1px solid rgb(27, 64, 95);
+overflow: hidden; /*esconde oq sobra das imgs*/
+}
+
+.projeto-card:hover{
+      transform: translateY(-10px) scale(1.03);
+}
+
+
+.foto-projeto{
+height: 200px;
+width: 100%;
+object-fit: cover;
+}
+
+.projetos-titulo{
+text-align: center;
+font-size: 3.5rem;
+margin-bottom: 50px;
+}
+
+
+.projeto-texto{
+
+margin-bottom: 14px;
+}
+
+.titulo-proj{
+margin-bottom: 2px;
+}
+
+.caixa-texto-projetos{
+    padding: 1.5rem;
+}
+
+.contato{
+padding: 6rem 2rem;
+}
+
+.titulo-contatos{
+    padding: 6rem 2rem;
+text-align: center;
+font-size: 2.5rem;
+margin-bottom: 50px;
+}
+
+.formulario-contato{
+max-width:600px ;
+margin: 0 auto;
+background-color: rgba(105, 99, 150, 0.2);
+backdrop-filter: blur(5px);
+padding: 2rem;
+border: 1px solid rgb(37, 57, 73);
+border: radius 16px;;
+}
+
+.campo-form{
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(26, 26, 185, 0.2);
+    border-radius:8px ;
+    color: rgb(239, 244, 242);
+}
+
+.grupo-form{
+    margin-bottom: 1.5rem;
+}
+
+.botao{
+    background-color: rgba(16, 14, 32, 0.2);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: bold;
+
+}
+
+.botao:hover{
+    color: rgb(232, 229, 237);
+}
